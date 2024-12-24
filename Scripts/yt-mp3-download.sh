@@ -5,7 +5,7 @@ clear
 read -p "Introduce el término de búsqueda (canción, artista, etc.): " search_term 
 
 # Carpeta para guardar las descargas
-yt_folder="~/storage/download/Music
+yt_folder="~/storage/download/Music"
 
 mkdir -p "$yt_folder"
 
