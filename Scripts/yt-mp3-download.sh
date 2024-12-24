@@ -1,13 +1,21 @@
 #!/bin/bash
 # Script creado por wr3nch
 
+
 clear
+
+clear
+
+desktop_path="~/storage/downloads"
+yt_folder="$desktop_path/Musica"
+if [ ! -d "$yt_folder" ]; then
+    mkdir -p "$yt_folder"
+else
+    echo ""
+fi
+
 read -p "Introduce el término de búsqueda (canción, artista, etc.): " search_term 
 
-# Carpeta para guardar las descargas
-yt_folder="~/storage/download/Music"
-
-mkdir -p "$yt_folder"
 
 echo "Buscando en YouTube..."
 yt-dlp "ytsearch10:$search_term" --get-title --get-id > results.txt
