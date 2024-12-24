@@ -4,7 +4,7 @@ echo "ACTUALIZANDO..."
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-REPO_URL="https://github.com/wrenchpc/yt.git"
+REPO_URL="https://github.com/wrenchpc/yt.termux.git"
 
 TEMP_DIR=$(mktemp -d)
 
