@@ -1,9 +1,6 @@
 #!/bin/bash
 # Script creado por wr3nch
 
-
-clear
-
 clear
 
 desktop_path="~/storage/downloads"
