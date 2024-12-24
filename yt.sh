@@ -50,9 +50,9 @@ confirm_install() {
     if [[ "$confirm" == "si" ]]; then
 
 	#termux
-	termux-setup-storage #Pedir permiso para descargar archivos fuera de termux (para enviar a la carpeta "DESCARGAS")
 	pkg install mpv python python-pip openssh jq --yes
  	pip install -U yt-dlp
+  	termux-setup-storage #Pedir permiso para descargar archivos fuera de termux (para enviar a la carpeta "DESCARGAS")
 	
     else
         echo "La instalación fue cancelada."
